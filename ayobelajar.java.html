@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>ayobelajar.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #7a7e85;}
+.s4 { color: #6aab73;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+ayobelajar.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">insert</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">java</span><span class="s2">.</span><span class="s1">util</span><span class="s2">.</span><span class="s1">Scanner</span><span class="s2">;</span>
+
+<span class="s0">class </span><span class="s1">hitungKalkulator</span>
+<span class="s2">{</span>
+    <span class="s0">public double </span><span class="s1">tambah</span><span class="s2">(</span><span class="s0">double </span><span class="s1">nilai_1</span><span class="s2">, </span><span class="s0">double </span><span class="s1">nilai_2</span><span class="s2">)</span>
+    <span class="s2">{</span>
+        <span class="s0">double </span><span class="s1">hasil </span><span class="s2">= </span><span class="s1">nilai_1</span><span class="s2">+</span><span class="s1">nilai_2</span><span class="s2">;</span>
+        <span class="s0">return </span><span class="s1">hasil</span><span class="s2">;</span>
+    <span class="s2">}</span>
+    <span class="s0">public double </span><span class="s1">kurang</span><span class="s2">(</span><span class="s0">double </span><span class="s1">nilai_1</span><span class="s2">, </span><span class="s0">double </span><span class="s1">nilai_2</span><span class="s2">)</span>
+    <span class="s2">{</span>
+        <span class="s0">double </span><span class="s1">hasil </span><span class="s2">= </span><span class="s1">nilai_1</span><span class="s2">-</span><span class="s1">nilai_2</span><span class="s2">;</span>
+        <span class="s0">return </span><span class="s1">hasil</span><span class="s2">;</span>
+    <span class="s2">}</span>
+    <span class="s0">public double </span><span class="s1">kali</span><span class="s2">(</span><span class="s0">double </span><span class="s1">nilai_1</span><span class="s2">, </span><span class="s0">double </span><span class="s1">nilai_2</span><span class="s2">)</span>
+    <span class="s2">{</span>
+        <span class="s0">double </span><span class="s1">hasil </span><span class="s2">= </span><span class="s1">nilai_1</span><span class="s2">*</span><span class="s1">nilai_2</span><span class="s2">;</span>
+        <span class="s0">return </span><span class="s1">hasil</span><span class="s2">;</span>
+    <span class="s2">}</span>
+
+<span class="s2">}</span>
+<span class="s0">public class </span><span class="s1">demoKonversi</span>
+<span class="s2">{</span>
+    <span class="s0">public static void </span><span class="s1">main</span><span class="s2">(</span><span class="s1">String</span><span class="s2">[] </span><span class="s1">args</span><span class="s2">)</span>
+    <span class="s2">{</span>
+        <span class="s3">// pembentukan objek</span>
+        <span class="s1">hitungKalkulator obj </span><span class="s2">= </span><span class="s0">new </span><span class="s1">hitungKalkulator</span><span class="s2">();</span>
+        <span class="s1">Scanner sc </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Scanner</span><span class="s2">(</span><span class="s1">System</span><span class="s2">.</span><span class="s1">in</span><span class="s2">);</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Masukan nilai 1 : &quot;</span><span class="s2">);</span>
+        <span class="s0">double </span><span class="s1">nilai_1 </span><span class="s2">= </span><span class="s1">sc</span><span class="s2">.</span><span class="s1">nextDouble</span><span class="s2">();</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Masukan nilai 2 : &quot;</span><span class="s2">);</span>
+        <span class="s0">double </span><span class="s1">nilai_2 </span><span class="s2">= </span><span class="s1">sc</span><span class="s2">.</span><span class="s1">nextDouble</span><span class="s2">();</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Hasil Tambah : &quot;</span><span class="s2">+</span><span class="s1">obj</span><span class="s2">.</span><span class="s1">tambah</span><span class="s2">(</span><span class="s1">nilai_1</span><span class="s2">, </span><span class="s1">nilai_2</span><span class="s2">));</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Hasil Kali : &quot;</span><span class="s2">+</span><span class="s1">obj</span><span class="s2">.</span><span class="s1">kali</span><span class="s2">(</span><span class="s1">nilai_1</span><span class="s2">, </span><span class="s1">nilai_2</span><span class="s2">));</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Hasil Kurang : &quot;</span><span class="s2">+</span><span class="s1">obj</span><span class="s2">.</span><span class="s1">kurang</span><span class="s2">(</span><span class="s1">nilai_1</span><span class="s2">, </span><span class="s1">nilai_2</span><span class="s2">));</span>
+
+    <span class="s2">}</span>
+<span class="s2">}</span></pre>
+</body>
+</html>
